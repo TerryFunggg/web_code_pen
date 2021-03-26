@@ -1,5 +1,3 @@
-import '../css/style.css';
-
 fetch("./showcase.json")
 .then(res => res.json()).then(function(showcase){
     if(showcase === null || showcase === undefined) return;
@@ -21,4 +19,8 @@ function appendCard(showcase){
     });
     // TODO: limit?
     document.querySelector('main').innerHTML = html;
+}
+
+window.onload = function(){
+    document.body.classList.remove('hidden');
 }
