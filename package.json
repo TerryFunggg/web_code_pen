@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:showcase":"node create_showcase_json.js",
     "build:css": "tailwindcss build src/styles.css -o public/styles.css",
-    "build": "export NODE_ENV=production && webpack --config webpack.prod.js",
-    "start": "webpack serve --open --mode=development --config webpack.dev.js"
+    "build": "export NODE_ENV=production && npm run build:showcase && webpack --config webpack.prod.js",
+    "start": "npm run build:showcase && webpack serve --open --mode=development --config webpack.dev.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "@babel/preset-env": "^7.13.12",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.0",
+    "findit": "^2.0.0",
     "postcss": "^8.2.8",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^5.2.0",
