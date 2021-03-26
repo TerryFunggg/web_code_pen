@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our reviews</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="font-sansh-screen h-screen" style="background-color: #F1F5F8">
 
@@ -16,7 +17,7 @@
 
     <div class="mx-1 md:mx-auto mt-10 p-1 md:px-20 max-w-4xl"> 
         <div class="bg-white flex flex-col justify-center items-center shadow-xl rounded-md">
-            <img class="m-5" src="./../img/avatar.png" alt="">
+            <img class="m-5" src="./img/avatar.png" alt="">
             <p class="font-bold tracking-wider">Terry Fung</p>
             <p class="uppercase text-blue-400 text-sm">Web developer</p>
             <p class="px-10 py-5 text-center text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, commodi perspiciatis. Ipsum magnam deserunt libero maxime aspernatur illum, velit, eius eaque quaerat quod nesciunt. Quasi rerum quidem aliquam expedita saepe!</p>
@@ -28,6 +29,6 @@
     </div>
     
 
-    <script src="./../js/our_reviews.js"></script>
+    <script src="./js/our_reviews.js"></script>
 </body>
 </html>

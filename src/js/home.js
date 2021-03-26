@@ -14,7 +14,7 @@ function appendCard(showcase){
     showcase.map(function(item){
         html = `
 <div class="showcase">
-    <a href="./showcase/${item.html}">
+    <a href="./${item.html}">
     <img src="./img/${item.img}" alt="">
     </a>
 </div>`
