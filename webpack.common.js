@@ -3,8 +3,9 @@ const entries = require('./entries');
 module.exports = {
     entry: entries,
     output: { 
-        path: path.resolve(__dirname, 'dist/js'), 
-        filename: '[name].js',
+        path: path.resolve(__dirname, 'dist'), 
+        filename: 'js/[name].js',
+        clean: true,
     }, 
     module: {
         rules: [
@@ -20,7 +21,7 @@ module.exports = {
             }, 
             { 
                 test: /\.css$/i, 
-                include: path.resolve(__dirname, 'src'), 
+                include: path.resolve(__dirname, 'src/css'), 
                 use: ['style-loader', 'css-loader', 'postcss-loader'], 
             },
         ],
