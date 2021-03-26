@@ -1,4 +1,4 @@
-import '../css/home.css';
+import '../css/style.css';
 
 fetch("./showcase.json")
 .then(res => res.json()).then(function(showcase){
@@ -14,7 +14,7 @@ function appendCard(showcase){
     showcase.map(function(item){
         html = `
 <div class="showcase">
-    <a href="./${item.html}">
+    <a href="./showcase/${item.html}">
     <img src="./img/${item.img}" alt="">
     </a>
 </div>`

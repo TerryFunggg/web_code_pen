@@ -1,6 +1,6 @@
 const entry_list = {
-    home: 'home.js',
-    our_reviews: 'our_reviews.js'
+    main: 'main.js',
+    empty: 'empty.js'
 }
 
 for( const entry in entry_list){

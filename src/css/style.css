@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.showcase {
+    @apply shadow-md hover:shadow-xl transition ease-linear duration-500;
+}

@@ -2,10 +2,10 @@
   "name": "web_box",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "build:showcase": "node create_showcase_json.js",
-    "build:css": "tailwindcss build src/styles.css -o public/styles.css",
+    "build:css": "tailwindcss build src/styles.css -o dist/styles.css",
     "build": "export NODE_ENV=production && npm run build:showcase && webpack --config webpack.prod.js",
     "start": "npm run build:showcase && webpack serve --open --mode=development --config webpack.dev.js"
   },

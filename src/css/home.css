@@ -1,5 +1,0 @@
-@import "./style.css";
-
-.showcase {
-    @apply shadow-md hover:shadow-xl transition ease-linear duration-500;
-}
