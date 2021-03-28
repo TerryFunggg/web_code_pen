@@ -1,4 +1,4 @@
-var finder = require('findit')('./dist/showcase');
+var finder = require('findit')('./dist/showcases');
 var path = require('path');
 fs = require('fs');
 
@@ -9,7 +9,7 @@ finder.on('file', function (file, stat) {
   obj.push({ "html": file, "img": file.split(".")[0] + ".png" });
 
   fs.writeFile(
-    path.resolve(__dirname, 'dist/showcase.json'), 
+    path.resolve(__dirname, 'dist/showcases.json'), 
     JSON.stringify(obj), 
     handleError);
 });
