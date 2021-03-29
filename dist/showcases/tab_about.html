@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab About</title>
+    <link rel="stylesheet" href="./../css/styles.css">
+</head>
+<body class="font-mono bg-white">
+    <h1 class="mt-10 text-center text-4xl font-bold tracking-widest">About</h1>
+    <p class="text-center m-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error.</p>
+
+    <div class="grid md:grid-cols-2 gap-5 p-5 mt-10 mx-auto max-w-5xl">        
+        <img class="shadow-md rounded-lg"
+            src="https://images.unsplash.com/photo-1616941482131-489295011919?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+        <div class="h-full overflow-hidden rounded-lg shadow-md">
+            <div class="grid grid-cols-3">
+                <button class="rounded bg-white py-2 px-3 focus:outline-none">History</button>
+                <button class="bg-gray-100 py-2 px-3 focus:outline-none">Vision</button>
+                <button class="bg-gray-100 py-2 px-3 focus:outline-none">Goals</button>
+            </div>
+
+            <div class="p-5 bg-white h-full ">
+                <h2 class="font-semibold my-2">Lorem</h2>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugit veniam nulla quidem hic magni deserunt numquam provident quia quisquam? Sunt vitae fugiat porro! Aliquam quibusdam qui animi ratione sunt.</p>
+                <p class="text-gray-600 hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, error. Consequuntur, nemo earum recusandae doloribus officiis pariatur rerum ex ipsam expedita cumque adipisci deleniti repellendus voluptatem ducimus quasi saepe non.</p>
+                <p class="text-gray-600 hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates, fugiat soluta saepe commodi nemo! Recusandae nisi ad et iusto, voluptate commodi voluptatum sit soluta molestiae quaerat id accusantium accusamus. Cum totam illo fugit minus placeat libero. Ducimus, voluptatibus impedit?</p>
+            </div>  
+        </div>
+    </div>
+
+    <script>
+            const buttons = document.querySelectorAll('button')
+            buttons.forEach((pel,pindex) => pel.addEventListener('click', function(){
+
+               pel.parentElement.nextElementSibling.querySelectorAll('p').forEach((cel,cindex) =>{                   
+                   
+                  if (pindex === cindex) {
+                    cel.classList.remove('hidden');
+                    buttons[cindex].classList.add('bg-white')
+                    buttons[cindex].classList.remove('bg-gray-100');
+                  }else{
+                    cel.classList.add('hidden');
+                    buttons[cindex].classList.add('bg-gray-100');
+                    buttons[cindex].classList.remove('bg-white');
+                };
+
+               });
+               /*  const desc = el.parentElement.nextElementSibling
+                desc.classList.contains("hidden") ? 
+                    desc.classList.remove('hidden') : desc.classList.add('hidden') */
+            }));   
+    </script>
+</body>
+</html>

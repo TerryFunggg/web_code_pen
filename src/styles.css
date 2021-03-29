@@ -5,3 +5,7 @@
 .showcase {
     @apply shadow-md hover:shadow-xl transition ease-linear duration-500;
 }
+
+.test {
+    @apply w-5 h-5 bg-red-400;
+}
