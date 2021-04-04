@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Reviews</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./../css/styles.css">
+</head>
+<body class="items-center" style="background-color: #F1F5F8">
+    <h1 class="text-center text-5xl my-12 font-bold" style="font-family: 'Parisienne', cursive;color: #D6C09D;">Genenal Question</h1>
+
+
+        <div class="m-auto max-w-2xl tracking-widest text-sm md:text-xl">
+
+            <div class="bg-white p-5 m-2 mb-8 shadow-lg rounded">
+                <div class="flex justify-between">
+                    <p class="inline">Lorem ipsum dolor sit amet?</p>
+                    <svg  class="mt-1 w-4 h-4 md:w-5 md:h-5 cursor-pointer " style="color:#D6C09D" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+                    </svg>
+                </div>
+                <div class="mt-5 p-1 md:text-base">
+                    <hr>
+                    <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo distinctio consectetur incidunt soluta dolore omnis, totam non porro eligendi eos, quod sequi velit reiciendis, esse nihil enim ipsa vero obcaecati.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 m-2 mb-8 shadow-lg rounded">
+                <div class="flex justify-between">
+                    <p class="inline">Lorem ipsum dolor sit adipisicing elit?</p>
+                    <svg  class="mt-1 w-4 h-4 md:w-5 md:h-5 cursor-pointer" style="color:#D6C09D" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+                    </svg>
+                </div>
+                <div class="mt-5 p-1 text-base hidden">
+                    <hr>
+                    <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo distinctio consectetur incidunt soluta dolore omnis, totam non porro eligendi eos, quod sequi velit reiciendis, esse nihil enim ipsa vero obcaecati.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 m-2 mb-8 shadow-lg rounded">
+                <div class="flex justify-between">
+                    <p class="inline">Lorem ipsum dolor sit amet?</p>
+                    <svg  class="mt-1 w-4 h-4 md:w-5 md:h-5 cursor-pointer" style="color:#D6C09D" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+                    </svg>
+                </div>
+                <div class="mt-5 p-1 text-base hidden">
+                    <hr>
+                    <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo distinctio consectetur incidunt soluta dolore omnis, totam non porro eligendi eos, quod sequi velit reiciendis, esse nihil enim ipsa vero obcaecati.</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const svgButtons = document.querySelectorAll('svg')
+            svgButtons.forEach((el) => el.addEventListener('click', function(){
+                const desc = el.parentElement.nextElementSibling
+                desc.classList.contains("hidden") ? 
+                    desc.classList.remove('hidden') : desc.classList.add('hidden')
+            }));   
+        </script>
+</body>
+</html>
