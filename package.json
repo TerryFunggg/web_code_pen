@@ -6,7 +6,7 @@
   "scripts": {
     "build:showcase": "node create_showcase_json.js",
     "build:tailwind": "tailwindcss build src/styles.css -o dist/css/styles.css",
-    "build": "npm run build:showcase"
+    "build": "npm run build:showcase && npm run build:tailwind "
   },
   "author": "",
   "license": "ISC",
